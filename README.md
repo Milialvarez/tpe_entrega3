@@ -14,8 +14,10 @@ Endpoints de nuestro trabajo:
      Ejemplo: http://localhost/tpeapi/api/productos/precio/10000/16000
   - Listado de todos los productos según una categoría: dado el id de una categoría se listan todos los productos de la misma.
      Ejemplo: http://localhost/tpeapi/api/productos/categoria/1 (1 equivale a "tops").
+
+     Aclaración: para usar las funciones de agregar, modificar y eliminar un producto o una categoría, primero se debe usar el endpoint http://localhost/tpeapi/api/user/token . La misma permite obtener el token que autoriza a realizar esas funciones (user: webadmin y password: admin).
   - Agregar un nuevo producto: se completan todos los campos requeridos en la sección 'body' y se agrega un producto.
-     Ejemplo: http://localhost/tpeapi/api/productos/agregar
+     Ejemplo: http://localhost/tpeapi/api/productos
      Ejemplo de lo que va en el body:
        {
          "producto": "prueba de un vestido nuevo",
