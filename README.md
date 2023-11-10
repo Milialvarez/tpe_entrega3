@@ -13,7 +13,7 @@ Endpoints de nuestro trabajo:
     los productos que se encuentran entre ese rango.
      Ejemplo: http://localhost/tpeapi/api/productos/precio/10000/16000
   - Listado de todos los productos según una categoría: dado el id de una categoría se listan todos los productos de la misma.
-     Ejemplo: http://localhost/tpeapi/api/productos/categoria/1 (1 equivale a "tops"
+     Ejemplo: http://localhost/tpeapi/api/productos/categoria/1 (1 equivale a "tops").
    
    
 
