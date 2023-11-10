@@ -14,6 +14,20 @@ Endpoints de nuestro trabajo:
      Ejemplo: http://localhost/tpeapi/api/productos/precio/10000/16000
   - Listado de todos los productos según una categoría: dado el id de una categoría se listan todos los productos de la misma.
      Ejemplo: http://localhost/tpeapi/api/productos/categoria/1 (1 equivale a "tops").
+  - Agregar un nuevo producto: se completan todos los campos requeridos en la sección 'body' y se agrega un producto.
+     Ejemplo: http://localhost/tpeapi/api/productos/agregar
+     Ejemplo de lo que va en el body:
+       {
+         "producto": "prueba de un vestido nuevo",
+          "stock": 11,
+          "id_categoria": 1,
+          "precio": 9000,
+          "proveedor": "milagrosalvarez2604@gmail.com",
+          "descripcion": "prueba de un producto nuevo",
+          "imagen": "https://www.distritomoda.com.ar/sites/default/files/styles/producto_interior/public/imagenes/whatsapp_image_2022-10-    04_at_10.55.57_am_1664904151.jpeg?itok=vYkqCex-",
+          "oferta": 1,     
+          "tendencia": 1
+        }
    
    
 
