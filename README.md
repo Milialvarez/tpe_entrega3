@@ -8,7 +8,7 @@ Endpoints de nuestro trabajo:
      Ejemplo para obtener todos los productos de forma normal: http://localhost/tpeapi/api/productos
      Ejemplo para obtener los productos dado un campo de la tabla y un tipo de orden: http://localhost/tpeapi/api/productos/?sort=precio&order=desc
      Ejemplo 2 para obtener los productos dado un campo de la tabla y un tipo de orden: http://localhost/tpeapi/api/productos/?sort=stock&order=asc
-     Ejemplo para obtener todos los productos filtrando por precio: 
+     Ejemplo para obtener todos los productos filtrando por precio: http://localhost/tpeapi/api/productos/?precio=40000
  - Listado de un producto en particular (por id): se ingresa el id del producto del cual se quiere ver su información y se lista 
    ese producto en particular. HTTP METHOD: GET
     Ejemplo: http://localhost/tpeapi/api/productos/7
