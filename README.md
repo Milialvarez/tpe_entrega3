@@ -49,24 +49,24 @@ Endpoints de nuestro trabajo:
             "tendencia": 0
        }
      Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
+     
+- Eliminar un producto: permite dado un id y si se está autorizado, eliminar un producto. METHOD: DELETE
+ Ejemplo: http://localhost/tpeapi/api/productos/18
+ Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
 
-    - Eliminar un producto: permite dado un id y si se está autorizado, eliminar un producto. METHOD: DELETE
-     Ejemplo: http://localhost/tpeapi/api/productos/18
-     Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
+ -  Modificar categorías: igual a modificar un producto, se requiere el id de la categoría. METHOD: PUT
+ Ejemplo: http://localhost/tpeapi/api/categoria/8
+ En el body: 
+ {
+ "nombre": "shorts",
+ "descripcion": "descripcion de prueba"
+}
+Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
 
-     Modificar categorías: igual a modificar un producto, se requiere el id de la categoría. METHOD: PUT
-     Ejemplo: http://localhost/tpeapi/api/categoria/8
-     En el body: 
-     {
-     "nombre": "shorts",
-     "descripcion": "descripcion de prueba"
-    }
-    Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
-
-    Eliminar una categoría: METHOD: DELETE Ejemplo: http://localhost/tpeapi/api/categoria/eliminar/8
-     Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
-
-Agregar una categoría: METHOD: POST Ejemplo: http://localhost/tpeapi/api/categoria
+ -  Eliminar una categoría: METHOD: DELETE Ejemplo: http://localhost/tpeapi/api/categoria/eliminar/8
+ Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
+ 
+-  Agregar una categoría: METHOD: POST Ejemplo: http://localhost/tpeapi/api/categoria
 En el body:
 {
     "nombre": "zapatillas",
