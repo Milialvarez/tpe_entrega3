@@ -20,7 +20,8 @@ class AuthHelper {
             'typ' => 'JWT'
         );
             
-       
+        $payload->exp = time() + JWT_EXP;
+        
         $header =   $this->baseurl_encode(json_encode($header));
         $payload = $this->baseurl_encode(json_encode($payload));
         
@@ -50,7 +51,9 @@ class AuthHelper {
 
         $payload = json_decode(base64_decode($payload));
 
-
+         if($payload->exp<time()){
+            return false;
+        }
         return $payload;
     }
 
