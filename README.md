@@ -25,6 +25,7 @@ Endpoints de nuestro trabajo:
   - Agregar un nuevo producto: se completan todos los campos requeridos en la sección 'body' y se agrega un producto.
      Ejemplo: http://localhost/tpeapi/api/productos   METHOD: POST
      Ejemplo de lo que va en el body:
+    
        {
          "producto": "prueba de un vestido nuevo",
           "stock": 11,
@@ -32,15 +33,17 @@ Endpoints de nuestro trabajo:
           "precio": 9000,
           "proveedor": "milagrosalvarez2604@gmail.com",
           "descripcion": "prueba de un producto nuevo",
-          "imagen": "https://www.distritomoda.com.ar/sites/default/files/styles/producto_interior/public/imagenes/whatsapp_image_2022-10-    04_at_10.55.57_am_1664904151.jpeg?itok=vYkqCex-",
+          "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5jcc0_BLzcn20YMmoG2yqsw9uLnW-m4a0DBhrND3&s",
           "oferta": 1,     
           "tendencia": 1
         }
+    
     Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
 
-   -Modificar un producto: permite, si se está autorizado, modificar un producto dado su id y completando los campos requeridos. HTTP METHOD: PUT
+    - Modificar un producto: permite, si se está autorizado, modificar un producto dado su id y completando los campos requeridos. HTTP METHOD: PUT
    Ejemplo: http://localhost/tpeapi/api/productos/5
    Ejemplo del body: 
+   
       {
             "stock": 2,
             "precio": 20000,
@@ -48,6 +51,7 @@ Endpoints de nuestro trabajo:
             "oferta": 1,
             "tendencia": 0
        }
+       
      Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
      
 - Eliminar un producto: permite dado un id y si se está autorizado, eliminar un producto. METHOD: DELETE
