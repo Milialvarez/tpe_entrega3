@@ -40,7 +40,7 @@ Endpoints de nuestro trabajo:
     
     Ejemplo de lo que va en Authorization (Bearer token): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6IndlYmFkbWluIiwicGFzc3dvcmQiOiIkMnkkMTAkeU54d2N2SUxkWVMzaHB2bzZkY3NidXNpeXVLdHRrM0RUUFhodHZLLmt2dUJFdG84aUJaMzYiLCJhZG1pbiI6MX0.DxYTiLh2zp2Rej0NiGo0NitATkcK8yG5htNaMnyfOgw
 
-    - Modificar un producto: permite, si se está autorizado, modificar un producto dado su id y completando los campos requeridos. HTTP METHOD: PUT
+- Modificar un producto: permite, si se está autorizado, modificar un producto dado su id y completando los campos requeridos. HTTP METHOD: PUT
    Ejemplo: http://localhost/tpeapi/api/productos/5
    Ejemplo del body: 
    
